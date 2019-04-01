@@ -6,3 +6,7 @@ end
 
 # Crazy: Enable vi key bindings
 set -g fish_key_bindings fish_vi_key_bindings
+
+set -g S /home/pyro/src
+set -g O /home/pyro/org
+set -g H /home/pyro/src/haskell
