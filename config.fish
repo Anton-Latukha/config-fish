@@ -13,3 +13,8 @@ set -g H /home/pyro/src/haskell
 
 alias vi nvim
 alias vim nvim
+alias cd.. 'cd ..'
+
+alias ... 'cd ../..'
+alias .... 'cd ../../..'
+alias ..... 'cd ../../../..'
