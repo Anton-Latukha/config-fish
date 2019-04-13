@@ -1,6 +1,6 @@
 [submodule "functions"]
 	path = functions
-	url = git@github.com:Anton-Latukha/fish-functions.git
+	url = git@gitlab.com:Anton.Latukha/fish-functions.git
 [submodule "externalModules/LS_COLORS"]
 	path = externalModules/LS_COLORS
 	url = https://github.com/trapd00r/LS_COLORS
