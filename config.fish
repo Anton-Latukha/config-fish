@@ -10,6 +10,7 @@ set -g fish_key_bindings 'fish_vi_key_bindings'
 set -g O '/home/pyro/org'
 set -g S '/home/pyro/src'
 set -g H '/home/pyro/src/haskell'
+set -g HH '/home/pyro/src/haskell/hnix'
 set -g N '/home/pyro/src/nix'
 
 alias vi 'nvim'
