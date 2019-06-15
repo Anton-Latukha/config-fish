@@ -12,6 +12,7 @@ set -g S '/home/pyro/src'
 set -g H '/home/pyro/src/haskell'
 set -g HH '/home/pyro/src/haskell/hnix'
 set -g N '/home/pyro/src/nix'
+set -g C '/home/pyro/.config'
 
 alias vi 'nvim'
 alias vim 'nvim'
