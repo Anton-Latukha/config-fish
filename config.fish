@@ -14,6 +14,7 @@ set -g HH '/home/pyro/src/haskell/hnix'
 set -g N '/home/pyro/src/nix'
 set -g C '/home/pyro/.config'
 set -g F '/home/pyro/.config/fish'
+set -g FF '/home/pyro/.config/fish/functions'
 
 alias vi 'nvim'
 alias vim 'nvim'
