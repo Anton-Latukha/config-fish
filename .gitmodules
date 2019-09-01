@@ -7,3 +7,6 @@
 [submodule "oh-my-fish"]
 	path = externalModules/oh-my-fish
 	url = https://github.com/oh-my-fish/oh-my-fish
+[submodule "scripts-fish"]
+	path = scripts
+	url = git@gitlab.com:Anton.Latukha/fish-scripts.git
