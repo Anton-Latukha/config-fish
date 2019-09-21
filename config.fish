@@ -24,6 +24,23 @@ set -gu 'FF' '/home/pyro/.config/fish/functions'
 set -gu 'FS' '/home/pyro/.config/fish/scripts'
 set -gu 'D' '/home/pyro/Downloads'
 
+set 'normal_color'     (set_color 'normal')
+set 'success_color'    (set_color "$fish_pager_color_progress" ^ '/dev/null'; or set_color 'cyan')
+set 'error_color'      (set_color "$fish_color_error" ^ '/dev/null'; or set_color 'red' --bold)
+set 'repository_color' (set_color "$fish_color_quote" ^ '/dev/null'; or set_color 'brown')
+
+set 'fish' '>'
+set 'fishNrm' (set_color 'green')"$fish"(set_color 'normal')
+set 'fishErr' "$error_color""$fish"(set_color 'normal')
+set 'ahead' '↑'
+set 'behind' '↓'
+set 'diverged' '⥄'
+set 'dirty' (set_color 'green')'⨯'
+set 'none' '◦'
+
+set 'dirClrR' (set_color 'red')
+set 'dirClrU' (set_color 'green')
+
 alias 'vi' 'nvim'
 alias 'vim' 'nvim'
 alias 'cd..' 'cd ..'
@@ -44,6 +61,10 @@ function 'fish_title'
 end
 #### \Emacs support
 
+set 'vicm' (set_color --bold 'FF6600')'🅽 '(set_color 'normal')
+set 'viim' (set_color 'green')'🅸 '(set_color 'normal')
+set 'virm' (set_color 'green')'🆁 '(set_color 'normal')
+set 'vivm' (set_color --bold 'brmagenta')'🆅 '(set_color 'normal')
 
 #### Modifying the vi mode prompts
 function 'fish_mode_prompt' --description 'Displays the current mode'
@@ -51,20 +72,14 @@ function 'fish_mode_prompt' --description 'Displays the current mode'
   if test "$fish_key_bindings" = "fish_vi_key_bindings"
     switch $fish_bind_mode
       case 'default'
-        set_color --bold 'FF6600'
-        echo '🅽'
+        printf "$vicm"
       case 'insert'
-        set_color --bold 'green'
-        echo '🅸'
+        printf "$viim"
       case 'replace_one'
-        set_color --bold 'green'
-        echo '🆁'
+        printf "$virm"
       case visual
-        set_color --bold 'brmagenta'
-        echo '🆅'
+        printf "$vivm"
     end
-    set_color 'normal'
-    printf ' '
   end
 end
 
