@@ -67,3 +67,15 @@ function 'fish_mode_prompt' --description 'Displays the current mode'
     printf ' '
   end
 end
+
+function rWakatime
+  ## Hook Wakatime to the terminal
+  set 'curPath' (pwd)
+  set 'gitProj' (/run/current-system/sw/bin/git 'config' --get 'remote.u.url' ^ '/dev/null')
+  if test -n "$gitProj"
+    set 'proj' (/run/current-system/sw/bin/basename -s '.git' "$gitProj")
+  else
+    set 'proj' 'Terminal'
+  end
+  /run/current-system/sw/bin/wakatime --write --plugin 'fish-wakatime/0.0.1' --entity-type 'app' --project "$proj" --entity (echo $history[1] | cut -d' ' -f1) 2>&1 > '/dev/null' &
+end
