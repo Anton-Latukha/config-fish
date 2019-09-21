@@ -32,11 +32,11 @@ set 'repository_color' (set_color "$fish_color_quote" ^ '/dev/null'; or set_colo
 set 'fish' '>'
 set 'fishNrm' (set_color 'green')"$fish"(set_color 'normal')
 set 'fishErr' "$error_color""$fish"(set_color 'normal')
-set 'ahead' '↑'
-set 'behind' '↓'
-set 'diverged' '⥄'
+set 'ahead' (set_color 'green')'↑'
+set 'behind' (set_color 'green')'↓'
+set 'diverged' (set_color 'green')'⥄'
 set 'dirty' (set_color 'green')'⨯'
-set 'none' '◦'
+set 'none' (set_color 'green')'◦'
 
 set 'dirClrR' (set_color 'red')
 set 'dirClrU' (set_color 'green')
