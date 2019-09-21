@@ -22,6 +22,7 @@ set -gu 'G' '/home/pyro/.config/git'
 set -gu 'F' '/home/pyro/.config/fish'
 set -gu 'FF' '/home/pyro/.config/fish/functions'
 set -gu 'FS' '/home/pyro/.config/fish/scripts'
+set -gu 'D' '/home/pyro/Downloads'
 
 alias 'vi' 'nvim'
 alias 'vim' 'nvim'
