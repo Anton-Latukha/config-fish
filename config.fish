@@ -67,10 +67,10 @@ set 'virm' (set_color 'green')'🆁 '(set_color 'normal')
 set 'vivm' (set_color --bold 'brmagenta')'🆅 '(set_color 'normal')
 
 #### Modifying the vi mode prompts
+# Do nothing if not in vi mode
 function 'fish_mode_prompt' --description 'Displays the current mode'
-  # Do nothing if not in vi mode
-  if test "$fish_key_bindings" = "fish_vi_key_bindings"
-    switch $fish_bind_mode
+  if test "$fish_key_bindings" = 'fish_vi_key_bindings'
+    switch "$fish_bind_mode"
       case 'default'
         printf "$vicm"
       case 'insert'
@@ -82,6 +82,8 @@ function 'fish_mode_prompt' --description 'Displays the current mode'
     end
   end
 end
+
+set 'repository_color' (set_color "$fish_color_quote" ^ '/dev/null'; or set_color 'brown')
 
 function rWakatime
   ## Hook Wakatime to the terminal
