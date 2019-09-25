@@ -23,6 +23,7 @@ set -gu 'F' '/home/pyro/.config/fish'
 set -gu 'FF' '/home/pyro/.config/fish/functions'
 set -gu 'FS' '/home/pyro/.config/fish/scripts'
 set -gu 'D' '/home/pyro/Downloads'
+set -gu 'VID' '/btrfs/midimportant/videos/'
 
 set 'normal_color'     (set_color 'normal')
 set 'success_color'    (set_color "$fish_pager_color_progress" ^ '/dev/null'; or set_color 'cyan')
@@ -94,5 +95,5 @@ function rWakatime
   else
     set 'proj' 'Terminal'
   end
-  /run/current-system/sw/bin/wakatime --write --plugin 'fish-wakatime/0.0.1' --entity-type 'app' --project "$proj" --entity (echo $history[1] | cut -d' ' -f1) 2>&1 > '/dev/null' &
+  /run/current-system/sw/bin/wakatime --write --plugin 'fish-wakatime/0.0.1' --entity-type 'app' --project "$proj" --entity 'Tilix' &
 end
