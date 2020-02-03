@@ -44,6 +44,8 @@ set 'none' (set_color 'green')'◦'
 set 'dirClrR' (set_color 'red')
 set 'dirClrU' (set_color 'green')
 
+set 'bGreen' (set_color 'brgreen')
+
 alias 'vi' 'nvim'
 alias 'vim' 'nvim'
 alias 'cd..' 'cd ..'
