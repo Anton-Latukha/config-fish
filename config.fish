@@ -36,9 +36,9 @@ set 'fish' '>'
 set 'fishNrm' (set_color 'green')"$fish"(set_color 'normal')
 set 'fishErr' "$error_color""$fish"(set_color 'normal')
 set 'ahead' (set_color 'green')'↑'
-set 'behind' (set_color 'green')'↓'
-set 'diverged' (set_color 'green')'⥄'
-set 'dirty' (set_color 'green')'⨯'
+set 'behind' (set_color 'brown')'↓'
+set 'diverged' (set_color 'brown')'⥄'
+set 'dirty' (set_color 'brown')'⨯'
 set 'none' (set_color 'green')'◦'
 
 set 'dirClrR' (set_color 'red')
