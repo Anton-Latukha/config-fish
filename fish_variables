@@ -15,6 +15,7 @@ SETUVAR --export LESS_TERMCAP_ue:\x1b\x28B\x1b\x5bm
 SETUVAR --export LESS_TERMCAP_us:\x1b\x5b32m
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
+SETUVAR __fish_initialized:3100
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:\x2d\x2dbold
@@ -26,6 +27,7 @@ SETUVAR fish_color_error:brred
 SETUVAR fish_color_escape:bryellow\x1e\x2d\x2dbold
 SETUVAR fish_color_history_current:\x2d\x2dbold
 SETUVAR fish_color_host:normal
+SETUVAR fish_color_host_remote:yellow
 SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
 SETUVAR fish_color_normal:normal
 SETUVAR fish_color_operator:bryellow
