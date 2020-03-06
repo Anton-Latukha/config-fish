@@ -113,3 +113,6 @@ end
 ## acomagu/fish-async-prompt configuration
 #### Inheritence of variables to async processes
 set -gu 'async_prompt_inherit_variables' 'all'
+#### Offload UI functions to async process
+set -gu 'async_prompt_functions' 'fish_prompt rWakatime done git_is_repo git_branch_name git_is_touched git_ahead prompt_pwd fish_right_prompt'
+
