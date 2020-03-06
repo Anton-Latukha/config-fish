@@ -112,4 +112,4 @@ end
 
 ## acomagu/fish-async-prompt configuration
 #### Inheritence of variables to async processes
-set -g 'async_prompt_inherit_variables' 'all'
+set -gu 'async_prompt_inherit_variables' 'all'
