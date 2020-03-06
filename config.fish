@@ -90,6 +90,7 @@ end
 
 set 'repository_color' (set_color "$fish_color_quote" ^ '/dev/null'; or set_color 'brown')
 
+## Function that runs Wakatime, executed further
 function rWakatime
   ## Hook Wakatime to the terminal
   set 'curPath' (pwd)
