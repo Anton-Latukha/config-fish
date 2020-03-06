@@ -120,3 +120,6 @@ set -gu 'async_prompt_functions' 'fish_prompt rWakatime done git_is_repo git_bra
 #### Filter directories with
 set -gu 'ENHANCD_FILTER' 'fzf'
 
+## franciscolourenco/done configuration
+#### display notifications if a command longer then
+set -gu '__done_min_cmd_duration' '10000'
