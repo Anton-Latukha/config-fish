@@ -2,3 +2,4 @@ fishd.rogue
 /conf.d/omf.fish
 *enhancd*
 /conf.d/done.fish
+/conf.d/__async_prompt.fish
