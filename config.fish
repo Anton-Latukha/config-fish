@@ -25,7 +25,7 @@ set -gu 'F' '/home/pyro/.config/fish'
 set -gu 'FF' '/home/pyro/.config/fish/functions'
 set -gu 'FS' '/home/pyro/.config/fish/scripts'
 set -gu 'D' '/home/pyro/Downloads'
-set -gu 'VID' '/btrfs/midimportant/videos/'
+set -gu 'VID' '/m/v'
 
 set 'normal_color'     (set_color 'normal')
 set 'success_color'    (set_color "$fish_pager_color_progress" ^ '/dev/null'; or set_color 'cyan')
