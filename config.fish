@@ -47,6 +47,7 @@ set 'dirClrU' (set_color 'green')
 
 set 'bGreen' (set_color 'brgreen')
 
+alias 'h' 'hoogle'
 alias 'vi' 'nvim'
 alias 'vim' 'nvim'
 alias 'cd..' 'cd ..'
