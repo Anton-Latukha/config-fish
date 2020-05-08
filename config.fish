@@ -11,6 +11,7 @@ set -g 'fish_key_bindings' 'fish_vi_key_bindings'
 
 set -gu 'O' '/home/pyro/org'
 set -gu 'OO' '/home/pyro/org/org'
+set -gu 'OD' '/home/pyro/org/dictionary'
 set -gu 'HN' '/home/pyro/org/haskell'
 set -gu 'OH' '/home/pyro/org/haskell'
 set -gu 'S' '/home/pyro/src'
