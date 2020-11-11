@@ -101,13 +101,13 @@ set 'repository_color' (set_color "$fish_color_quote" ^ '/dev/null'; or set_colo
 function rWakatime
   ## Hook Wakatime to the terminal
   set 'curPath' (pwd)
-  set 'gitProj' (/run/current-system/sw/bin/git 'config' --get 'remote.u.url' ^ '/dev/null')
+  set 'gitProj' (git 'config' --get 'remote.u.url' ^ '/dev/null')
   if test -n "$gitProj"
-    set 'proj' (/run/current-system/sw/bin/basename -s '.git' "$gitProj")
+    set 'proj' (basename -s '.git' "$gitProj")
   else
     set 'proj' 'Terminal'
   end
-  /run/current-system/sw/bin/wakatime --write --plugin 'fish-wakatime/0.0.1' --entity-type 'app' --project "$proj" --entity 'Tilix' &
+  wakatime --write --plugin 'fish-wakatime/0.0.1' --entity-type 'app' --project "$proj" --entity 'Tilix' &
 end
 
 ## Setup Fisher, if fishfile is present - loads all packages
