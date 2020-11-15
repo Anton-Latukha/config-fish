@@ -34,6 +34,9 @@ set -gu 'FE' '/home/pyro/.config/fish/externalModules'
 set -gu 'D' '/home/pyro/Downloads'
 set -gu 'VID' '/m/v'
 
+# Load LS_COLORS into LS colors DB
+# dircolors --c-shell "$FE/LS_COLORS/LS_COLORS"
+
 set 'normal_color'     (set_color 'normal')
 set 'success_color'    (set_color "$fish_pager_color_progress" ^ '/dev/null'; or set_color 'cyan')
 set 'error_color'      (set_color "$fish_color_error" ^ '/dev/null'; or set_color 'red' --bold)
