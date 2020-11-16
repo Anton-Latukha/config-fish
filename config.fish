@@ -127,10 +127,6 @@ set -gu 'async_prompt_inherit_variables' 'all'
 #### Offload UI functions to async process
 set -gu 'async_prompt_functions' 'fish_prompt rWakatime done git_is_repo git_branch_name git_is_touched git_ahead prompt_pwd fish_right_prompt'
 
-## b4b4r07/enhancd configuration
-#### Filter directories with
-set -gu 'ENHANCD_FILTER' 'fzf'
-
 ## franciscolourenco/done configuration
 #### display notifications if a command longer then
 set -gu '__done_min_cmd_duration' '10000'
