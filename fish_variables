@@ -16,6 +16,10 @@ SETUVAR --export LESS_TERMCAP_us:\x1b\x5b32m
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_initialized:3100
+SETUVAR _fisher_acomagu_2F_fish_2D_async_2D_prompt_files:/home/pyro/\x2econfig/fish/conf\x2ed/__async_prompt\x2efish
+SETUVAR _fisher_franciscolourenco_2F_done_files:/home/pyro/\x2econfig/fish/conf\x2ed/done\x2efish
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/pyro/\x2econfig/fish/functions/fisher\x2efish\x1e/home/pyro/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_plugins:acomagu/fish\x2dasync\x2dprompt\x1ejorgebucaran/fisher\x1efranciscolourenco/done
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:\x2d\x2dbold
