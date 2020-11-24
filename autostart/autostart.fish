@@ -33,4 +33,4 @@ run-app-on-desktop 'emacsclient -c' 2
 wmctrl -s 0
 
 # Launch KeePass
-run-app-on-desktop keepass2 0
+run-app-on-desktop keepass 0
