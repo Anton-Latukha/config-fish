@@ -136,4 +136,4 @@ set -gu '__done_min_cmd_duration' '10000'
 set -gu '__done_exclude' '(git (?!push|pull|clone)|emacs|e |uEmacs|dEmacs)'  # default: all git commands, except push and pull. accepts a regex.
 
 ## Modify the PATH
-# set -gu fish_user_paths $HOME/.cabal/bin $HOME/.ghcup/bin
+# set -gu fish_user_paths $HOME/.cabal/bin
