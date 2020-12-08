@@ -32,6 +32,8 @@ wmctrl -a 'Firefox'
 
 run-maximized-app-on-desktop 'emacsclient -c' 1
 
+sleep 1
+
 run-app-on-desktop 'emacsclient -c' 2
 
 # Switch to Desktop 0
