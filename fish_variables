@@ -6,12 +6,12 @@ SETUVAR --export LESS_TERMCAP_ZV:\x1d
 SETUVAR --export LESS_TERMCAP_ZW:\x1d
 SETUVAR --export LESS_TERMCAP_mb:\x1b\x5b5m
 SETUVAR --export LESS_TERMCAP_md:\x1b\x5b33m
-SETUVAR --export LESS_TERMCAP_me:\x1b\x28B\x1b\x5bm
+SETUVAR --export LESS_TERMCAP_me:\x1b\x5bm\x0f
 SETUVAR --export LESS_TERMCAP_mh:\x1b\x5b2m
 SETUVAR --export LESS_TERMCAP_mr:\x1b\x5b7m
-SETUVAR --export LESS_TERMCAP_se:\x1b\x28B\x1b\x5bm
-SETUVAR --export LESS_TERMCAP_so:\x1b\x5b1m\x1b\x5b90m
-SETUVAR --export LESS_TERMCAP_ue:\x1b\x28B\x1b\x5bm
+SETUVAR --export LESS_TERMCAP_se:\x1b\x5bm\x0f
+SETUVAR --export LESS_TERMCAP_so:\x1b\x5b1m\x1b\x5b38m
+SETUVAR --export LESS_TERMCAP_ue:\x1b\x5bm\x0f
 SETUVAR --export LESS_TERMCAP_us:\x1b\x5b32m
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
