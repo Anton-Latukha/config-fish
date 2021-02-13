@@ -18,21 +18,23 @@ move-current-window-to-desktop 2
 # Emacs clients
 
 ## Wait until Emacs initialized
-emacsclient --eval '(daemonp)'
+run-maximized-app-on-desktop 'emacsclient --eval "(daemonp)"' 0
 ## Run and kill first frame (to workaround the Spacemacs specific first buffer and load org-agenda on second launch)
-emacsclient -c --eval "(run-with-timer 2 nil (delete-frame))"
-emacsclient --eval '(daemonp)'
-emacsclient -c --eval "(run-with-timer 2 nil (delete-frame))"
+run-maximized-app-on-desktop 'emacsclient -c --eval "(run-with-timer 2 nil (delete-frame))"' 0
+run-maximized-app-on-desktop 'emacsclient --eval "(daemonp)"' 0
+run-maximized-app-on-desktop 'emacsclient -c --eval "(run-with-timer 2 nil (delete-frame))"' 0
 
-run-maximized-app-on-desktop 'emacsclient -c' 0
+run-maximized-app-on-desktop 'emacsclient -c --eval "(run-with-timer 2 nil (delete-frame))"' 0
 
 wmctrl -a 'Telegram'
 
 wmctrl -a 'Firefox'
 
-run-maximized-app-on-desktop 'emacsclient -c' 1
-
 sleep 1
+
+run-maximized-app-on-desktop 'emacsclient -c' 0
+
+run-maximized-app-on-desktop 'emacsclient -c' 1
 
 run-app-on-desktop 'emacsclient -c' 2
 
