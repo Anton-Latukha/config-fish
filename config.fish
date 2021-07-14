@@ -44,9 +44,9 @@ set -gu 'VID' '/m/v'
 # dircolors --c-shell "$FE/LS_COLORS/LS_COLORS"
 
 set 'normal_color'     (set_color 'normal')
-set 'success_color'    (set_color "$fish_pager_color_progress" ^ '/dev/null'; or set_color 'cyan')
-set 'error_color'      (set_color "$fish_color_error" ^ '/dev/null'; or set_color 'red' --bold)
-set 'repository_color' (set_color "$fish_color_quote" ^ '/dev/null'; or set_color 'brown')
+set 'success_color'    (set_color "$fish_pager_color_progress" 2> '/dev/null'; or set_color 'cyan')
+set 'error_color'      (set_color "$fish_color_error" 2> '/dev/null'; or set_color 'red' --bold)
+set 'repository_color' (set_color "$fish_color_quote" 2> '/dev/null'; or set_color 'brown')
 
 set 'fish' '>'
 set 'fishNrm' (set_color 'green')"$fish"(set_color 'normal')
@@ -105,13 +105,13 @@ function 'fish_mode_prompt' --description 'Displays the current mode'
   end
 end
 
-set 'repository_color' (set_color "$fish_color_quote" ^ '/dev/null'; or set_color 'brown')
+set 'repository_color' (set_color "$fish_color_quote" 2> '/dev/null'; or set_color 'brown')
 
 ## Function that runs Wakatime, executed further
 function rWakatime
   ## Hook Wakatime to the terminal
   set 'curPath' (pwd)
-  set 'gitProj' (git 'config' --get 'remote.u.url' ^ '/dev/null')
+  set 'gitProj' (git 'config' --get 'remote.u.url' 2> '/dev/null')
   if test -n "$gitProj"
     set 'proj' (basename -s '.git' "$gitProj")
   else
