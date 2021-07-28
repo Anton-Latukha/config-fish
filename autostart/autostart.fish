@@ -1,8 +1,9 @@
 #!/usr/bin/env fish
 
 # Emacs service
-systemctl --user import-environment PATH S O H HH HB NP N XDG_RUNTIME_DIR SSH_AUTH_SOCK
-systemctl --user start emacs
+# systemctl --user import-environment PATH S O H HH HB NP N XDG_RUNTIME_DIR SSH_AUTH_SOCK
+# systemctl --user start emacs
+run-maximized-app-on-desktop 'emacs' 1
 
 # Firefox
 run-maximized-app-on-desktop firefox 2
@@ -34,7 +35,7 @@ sleep 1
 
 run-maximized-app-on-desktop 'emacsclient -c' 0
 
-run-maximized-app-on-desktop 'emacsclient -c' 1
+# run-maximized-app-on-desktop 'emacsclient -c' 1
 
 run-app-on-desktop 'emacsclient -c' 2
 
