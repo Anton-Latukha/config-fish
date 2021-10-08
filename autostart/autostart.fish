@@ -18,6 +18,12 @@ move-current-window-to-desktop 2
 
 # Emacs clients
 
+dEmacs
+
+sleep 1
+
+run-maximized-app-on-desktop 'command emacs' 0
+
 ## Wait until Emacs initialized
 run-maximized-app-on-desktop 'emacsclient --eval "(daemonp)"' 0
 ## Run and kill first frame (to workaround the Spacemacs specific first buffer and load org-agenda on second launch)
@@ -33,11 +39,7 @@ wmctrl -a 'Firefox'
 
 sleep 1
 
-run-maximized-app-on-desktop 'emacsclient -c' 0
-
-# run-maximized-app-on-desktop 'emacsclient -c' 1
-
-run-app-on-desktop 'emacsclient -c' 2
+run-maximized-app-on-desktop 'emacsclient -c' 1
 
 # Switch to Desktop 0
 move-to-desktop 0
